@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.More.LoginActivity">
+    <TextView
+        android:id="@+id/tv_Tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Quản Lý Nhà Hàng"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:textStyle="bold|italic"
+        android:textColor="#3F78B5"
+        android:textSize="@dimen/_30sdp"/>
+    <EditText
+        android:id="@+id/edt_TenDN"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_Tittle"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Tên Đăng Nhập"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_checkTenDN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Tên đăng nhập không tồn tại"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_TenDN"
+        android:textColor="#AC0C0C"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/edt_MatKhauDN"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@id/edt_TenDN"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Mật Khẩu"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_checkMatKhauDN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Bạn đã nhập sai mật khẩu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_MatKhauDN"
+        android:textColor="#AC0C0C"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_DangNhap"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Đăng Nhập"
+        app:layout_constraintTop_toBottomOf="@id/edt_MatKhauDN"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/tv_DoiMK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có muốn đổi mật khẩu hay không ?"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_55sdp"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/tv_ClickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Click here"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="italic"
+        android:textColor="#00BCD4"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_DoiMK"/>
+
+</android.support.constraint.ConstraintLayout>

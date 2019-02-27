@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurantmanage">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ThucDon.ThucDonActivity"></activity>
+        <activity android:name=".Activity.TaiKhoan.CapNhatTaiKhoanActivity" />
+        <activity android:name=".Activity.More.EmployeeMain" />
+        <activity android:name=".item_user_rcv" />
+        <activity android:name=".Activity.TaiKhoan.ThemTaiKhoanActivity" />
+        <activity android:name=".Activity.TaiKhoan.TaiKhoanActivity" />
+        <activity android:name=".Activity.More.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.More.MainActivity" />
+    </application>
+
+</manifest>

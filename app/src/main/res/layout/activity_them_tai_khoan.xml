@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TaiKhoan.ThemTaiKhoanActivity">
+
+    <TextView
+    android:id="@+id/tv_Tittle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_60sdp"
+    android:text="Thêm Tài Khoản"
+    android:textColor="#3F78B5"
+    android:textSize="@dimen/_30sdp"
+    android:textStyle="bold|italic"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_AddTenDN"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:hint="Tên đăng nhập"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Tittle" />
+
+    <EditText
+        android:id="@+id/edt_AddMatKhauDN"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_AddTenDN" />
+
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/rdg_ChucVu"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/edt_AddMatKhauDN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:id="@+id/rdb_Admin"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee"
+            android:id="@+id/rdb_Employee"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/_50sdp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/btn_HuyTK"
+        android:text="Đặt Lại"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_ThemTK"
+        app:layout_constraintTop_toBottomOf="@id/rdg_ChucVu" />
+    <Button
+        android:layout_marginTop="@dimen/_40sdp"
+        android:id="@+id/btn_ThemTK"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Thêm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_HuyTK"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdg_ChucVu" />
+</android.support.constraint.ConstraintLayout>

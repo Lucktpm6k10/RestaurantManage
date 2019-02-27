@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_30sdp">
+
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/tv_TittleDIG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn có muốn xóa không ?"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/btn_DeleteDIG"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Xóa"
+        app:layout_constraintEnd_toStartOf="@+id/btn_CancelDIG"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_TittleDIG" />
+
+    <Button
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/btn_CancelDIG"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Hủy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_DeleteDIG"
+        app:layout_constraintTop_toBottomOf="@id/tv_TittleDIG" />
+
+</android.support.constraint.ConstraintLayout>
